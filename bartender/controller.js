@@ -13,7 +13,7 @@ async function createDrink(req, res) {
         if(!req.body.customerNumber || !req.body.drinkType) {
 
             res.status(400).json({
-                "message": "All fields required"
+                "message": "Both customerNumber and drinkType are required"
             });
            return;
    
